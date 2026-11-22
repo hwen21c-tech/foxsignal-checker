@@ -4,7 +4,7 @@
    · data/*.json 은 네트워크 우선 + 캐시 폴백(마지막 거래일 스냅샷).
    · 다른 도메인의 실측 API(stock-dashboard-live-6frm.vercel.app)는 가로채지 않고 그대로 통과시킨다
      — 시세는 언제나 실측 그대로여야 하므로 캐시하지 않는다. */
-var VER = 'foxsignal-checker-v2';
+var VER = 'foxsignal-checker-v3';
 var CORE = [
   './',
   './index.html',
