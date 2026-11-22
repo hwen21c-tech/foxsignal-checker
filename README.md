@@ -8,7 +8,7 @@
 
 | 배포 | 주소 |
 | --- | --- |
-| GitHub Pages (정적 · 바로 사용 가능) | https://hwen21c-tech.github.io/foxsignal-checker/ |
+| GitHub Pages (정적 · 바로 사용 중) | https://hwen21c-tech.github.io/foxsignal-checker/ |
 | Vercel (선택 · 같은 파일을 Import) | 저장소를 Vercel에 Import 하면 자동 생성 |
 
 ## 구성
@@ -52,8 +52,12 @@ cp deploy_repo/data/stock_snapshot_latest.json deploy_repo/data/signal_scorecard
    deploy_repo/data/theme-membership.json deploy_repo/data/last-dynamic-themes.json \
    ../foxsignal-checker/data/
 
-cd ../foxsignal-checker && git add -A && git commit -m "chore: 체커 최신본·스냅샷 동기화" && git push
+cd ../foxsignal-checker && git add -A && git commit -m "chore: 체커 최신본·스냅샷 동기화"
+git push origin main && git push origin main:gh-pages
 ```
+
+> **꼭 두 브랜치 모두 푸시하세요.** GitHub Pages 는 이 저장소의 **`gh-pages` 브랜치**를 바라보고 있어서,
+> `main` 만 올리면 사이트는 옛 화면 그대로입니다. (`main` 은 소스 원본, `gh-pages` 는 배포본 — 내용은 같게 유지)
 
 푸시 후에는 `index.html` 안의 세 곳만 이 저장소 기준으로 유지하면 됩니다.
 
