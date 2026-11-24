@@ -25,7 +25,7 @@ checker-icon-maskable-512.png    (maskable)
 checker-apple-180.png            (iOS 홈 화면 아이콘)
 .nojekyll                        GitHub Pages Jekyll 처리 생략
 data/stock_snapshot_latest.json  실시간 API가 막힐 때 쓰는 마지막 거래일 스냅샷
-data/signal_scorecard.json       "오늘의 거래대금 상위 종목" 칩 (성적표)
+data/signal_scorecard.json       "테마주도주 상위" 칩의 정적 폴백 (마지막 저장 성적표)
 data/theme-membership.json       종목 → 소속 테마 색인 (정적 폴백)
 data/last-dynamic-themes.json    직전 거래일 주도 테마 Top8 (정적 폴백)
 ```
@@ -40,6 +40,8 @@ data/last-dynamic-themes.json    직전 거래일 주도 테마 Top8 (정적 폴
   - `/api/stock-live?mode=alerts&code=<코드>` → 그 종목의 KRX 투자주의·경고·위험·거래정지 지정 여부
   - `/api/dart-live?code=<코드>&name=<종목명>&days=30` → DART 고유번호로 그 회사만 최근 30일 공시(위험/주목/일반)
   - `/api/stock-live?mode=theme_map` → 대표 테마 24개의 평균 등락률·합산 거래대금·구성종목(테마 상세 실측)
+  - `/api/tabs-live` → 지금 장중 주도 테마 8개와 구성종목 등락률·거래대금. **「테마주도주 상위」 칩은 이 값을 먼저 읽는다**
+    (테마 강도순으로 '실제 상승 + 거래대금 300억↑' 대장주 4종목·중복 제거). 비거나 실패할 때만 `data/signal_scorecard.json` 폴백.
   - `/api/stock-live?mode=theme_members&no=<테마번호>` → 그 테마 구성종목 전부(거래대금 내림차순)
   - `/api/stock-live?mode=theme_search&q=<테마명>` → 테마 이름으로 테마번호 찾기
   - `/api/stock-live?mode=history_catalyst&code=<코드>&name=<종목명>&price=<현재가>` → `[특징주]` 기사 이력 + 260일 과거 파동
