@@ -1,72 +1,127 @@
 {
  "schema": "fox-stock-snapshot/v1",
- "updatedAt": "2026-11-25T07:45:54+09:00",
+ "updatedAt": "2026-11-26T12:24:08+09:00",
  "basis": "네이버 일봉 마지막 거래일 종가(장 마감 후 스냅샷) · 실시간은 /api/stock-live",
- "tradeDate": "2026-11-24",
+ "tradeDate": "2026-11-26",
  "indices": [
   {
    "key": "KOSPI",
    "name": "코스피",
-   "price": 5006.03,
-   "open": 4880.16,
-   "high": 5065.74,
-   "low": 4880.16,
-   "changePct": 6.32
+   "price": 4740.58,
+   "open": 4745.1,
+   "high": 4817.77,
+   "low": 4715.81,
+   "changePct": 0.92
   },
   {
    "key": "KOSDAQ",
    "name": "코스닥",
-   "price": 665.88,
-   "open": 654.31,
-   "high": 670.95,
-   "low": 652.21,
-   "changePct": 4.79
+   "price": 662.11,
+   "open": 658.46,
+   "high": 673.57,
+   "low": 657.88,
+   "changePct": 1.76
   }
  ],
  "stocks": [
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "tradeDate": "2026-11-24",
-   "open": 154200.0,
-   "high": 154200.0,
-   "low": 144300.0,
-   "close": 145000.0,
-   "changePct": 0.35,
-   "valueEok": 4653.0
+   "code": "000660",
+   "name": "SK하이닉스",
+   "tradeDate": "2026-11-26",
+   "open": 1053000.0,
+   "high": 1098000.0,
+   "low": 1041000.0,
+   "close": 1062000.0,
+   "changePct": 4.73,
+   "valueEok": 5247.0
   },
   {
-   "code": "009150",
-   "name": "삼성전기",
-   "tradeDate": "2026-11-24",
-   "open": 863000.0,
-   "high": 885000.0,
-   "low": 812000.0,
-   "close": 820000.0,
-   "changePct": 2.89,
-   "valueEok": 6833.0
+   "code": "053800",
+   "name": "안랩",
+   "tradeDate": "2026-11-26",
+   "open": 154700.0,
+   "high": 174500.0,
+   "low": 154300.0,
+   "close": 167500.0,
+   "changePct": 6.08,
+   "valueEok": 2743.0
   },
   {
-   "code": "006400",
-   "name": "삼성SDI",
-   "tradeDate": "2026-11-24",
-   "open": 412000.0,
-   "high": 458000.0,
-   "low": 407500.0,
-   "close": 431000.0,
-   "changePct": 7.35,
-   "valueEok": 3244.0
+   "code": "053800",
+   "name": "안랩",
+   "tradeDate": "2026-11-26",
+   "open": 154700.0,
+   "high": 174500.0,
+   "low": 154300.0,
+   "close": 167500.0,
+   "changePct": 6.08,
+   "valueEok": 2743.0
   },
   {
-   "code": "402340",
-   "name": "SK스퀘어",
-   "tradeDate": "2026-11-24",
-   "open": 765000.0,
-   "high": 770000.0,
-   "low": 686000.0,
-   "close": 688000.0,
-   "changePct": -0.43,
-   "valueEok": 4199.0
+   "code": "278470",
+   "name": "에이피알",
+   "tradeDate": "2026-11-26",
+   "open": 292500.0,
+   "high": 309500.0,
+   "low": 292500.0,
+   "close": 299500.0,
+   "changePct": 2.74,
+   "valueEok": 2521.0
+  },
+  {
+   "code": "053800",
+   "name": "안랩",
+   "tradeDate": "2026-11-26",
+   "open": 154700.0,
+   "high": 174500.0,
+   "low": 154300.0,
+   "close": 167500.0,
+   "changePct": 6.08,
+   "valueEok": 1419.0
+  },
+  {
+   "code": "257720",
+   "name": "실리콘투",
+   "tradeDate": "2026-11-26",
+   "open": 28250.0,
+   "high": 31350.0,
+   "low": 28100.0,
+   "close": 29800.0,
+   "changePct": 3.11,
+   "valueEok": 888.0
+  },
+  {
+   "code": "257720",
+   "name": "실리콘투",
+   "tradeDate": "2026-11-26",
+   "open": 28250.0,
+   "high": 31350.0,
+   "low": 28100.0,
+   "close": 29800.0,
+   "changePct": 3.11,
+   "valueEok": 888.0
+  },
+  {
+   "code": "042510",
+   "name": "라온시큐어",
+   "tradeDate": "2026-11-26",
+   "open": 14700.0,
+   "high": 16150.0,
+   "low": 14520.0,
+   "close": 15510.0,
+   "changePct": 4.44,
+   "valueEok": 886.0
+  },
+  {
+   "code": "042510",
+   "name": "라온시큐어",
+   "tradeDate": "2026-11-26",
+   "open": 14700.0,
+   "high": 16150.0,
+   "low": 14520.0,
+   "close": 15510.0,
+   "changePct": 4.44,
+   "valueEok": 886.0
   }
  ]
 }
