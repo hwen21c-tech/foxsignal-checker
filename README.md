@@ -34,7 +34,7 @@ data/last-dynamic-themes.json    직전 거래일 주도 테마 Top8 (정적 폴
 
 이 저장소는 **화면만** 담고 있고, 값은 관제탑의 실측 API를 그대로 불러옵니다.
 
-- 기본: `https://stock-dashboard-live-6frm.vercel.app`
+- 기본: `https://stock-dashboard-live-bice.vercel.app`
   - `/api/stock-live?codes=<종목명|6자리코드>&fresh=1` → 실측 통합 시세 + 지수·해외선물·환율·SOX
   - `/api/stock-live?mode=theme&code=<코드>&pct=<등락률>` → 네이버 테마 랭킹·상세·종목뉴스 실측
   - `/api/stock-live?mode=alerts&code=<코드>` → 그 종목의 KRX 투자주의·경고·위험·거래정지 지정 여부
